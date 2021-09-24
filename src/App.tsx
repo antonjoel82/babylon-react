@@ -1,4 +1,5 @@
 import React from 'react'
+import SampleBabylon from './SampleBabylon'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
           <h2 className="text-base font-semibold tracking-wide text-blue-600 uppercase">
             Welcome to
           </h2>
+          <SampleBabylon />
         </div>
       </div>
     </div>
