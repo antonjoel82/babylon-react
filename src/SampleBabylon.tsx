@@ -1,7 +1,6 @@
 import React from "react";
 import { FreeCamera, Vector3, HemisphericLight, MeshBuilder, Scene, Mesh } from "@babylonjs/core";
 import { BabylonScene } from "./babylon/components/BabylonScene";
-// import SceneComponent from 'babylonjs-hook'; // if you install 'babylonjs-hook' NPM.
 
 let box: Mesh;
 
@@ -47,6 +46,6 @@ const onRender = (scene: Scene) => {
 
 export default () => (
   <div>
-    <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" width={900} height={900} />
+    <BabylonScene antialias onSceneReady={onSceneReady} onRender={onRender} id="my-canvas" width={800} height={600} />
   </div>
 );
