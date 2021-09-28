@@ -7,11 +7,9 @@ import { Engine, Scene, useAssetManager, TaskType, useBeforeRender, AssetManager
 import './terrain.css';
 import { Mesh } from '@babylonjs/core/Meshes/mesh';
 
-export default { title: 'Models' };
-
 
 const modelAssetTasks: Task[] = [
-  { taskType: TaskType.Mesh, rootUrl: "/public/", sceneFilename: 'disco_ball.gltf', name: 'discoBall' },
+  { taskType: TaskType.Mesh, rootUrl: "https://raw.githubusercontent.com/antonjoel82/babylon-react/main/src/public/", sceneFilename: 'disco_ball.gltf', name: 'discoBall' },
   // { taskType: TaskType.Mesh, rootUrl: "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoomBox/glTF/", sceneFilename: 'BoomBox.gltf', name: 'discoBall' },
 ];
 
