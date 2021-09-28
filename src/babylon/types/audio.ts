@@ -1,9 +1,17 @@
+import { ISoundOptions } from "@babylonjs/core/Audio/Interfaces/ISoundOptions";
 import { Sound } from "@babylonjs/core/Audio/sound";
 
-export interface Song {
+
+export interface SongInfo {
   title: string;
-  artist: string;
   link: string;
-  ready: boolean;
+  artist?: string;
+}
+
+export interface LoadableSongInfo extends SongInfo {
+  audioOptions?: ISoundOptions;
+}
+
+export interface Song extends SongInfo {
   audio: Sound;
 }

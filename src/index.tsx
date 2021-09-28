@@ -2,10 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'tailwindcss/tailwind.css'
 import App from './App'
+import { ErrorBoundary } from './ErrorBoundary'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
   </React.StrictMode>,
-  document.getElementById('root')
-)
+  document.getElementById("root")
+);
